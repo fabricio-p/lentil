@@ -1,0 +1,9 @@
+((synopsis "Lentil - A programming language")
+ (author "Fabricio P.")
+ (maintainer "Fabricio P.")
+ (category misc)
+ (license "BSD")
+ (dependencies srfi-1 srfi-4 srfi-14 srfi-13 srfi-146 srfi-128 fmt matchable type-extensions) ; srfi-158 hash-trie
+ (components (program lentil
+		      (linkage static)
+		      (csc-options "-C" "--std=c99"))))
